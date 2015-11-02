@@ -1,13 +1,12 @@
 # Enter your procedural solution here!
 def largest_prime_factor(input)
-  factor = 1
+  factor = 0
   factors = Array.new
-  while factor <= input 
-    if input % factor == 0
+  while input > factor
+    if factor % 2 != 0 && factor % 3 != 0
       factors.push(factor)
     end
-    factor =+ 1
+    factor += 1
   end
-  factors.max
 end
 
